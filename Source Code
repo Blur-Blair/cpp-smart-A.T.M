@@ -1,0 +1,43 @@
+#include <iostream> 
+#include <iomanip> 
+
+void calculateNotes (int amount) { 
+    int amountAgain;
+    // To make sure the user enters the right input or requirements before processing.  
+    for (int trial = 1; trial <= 3; trial ++) { 
+        // To keep
+        if (!(amount) || amount % 10 != 0 || amount < 0)  { 
+           std :: cout << std :: endl << "Entera amount again: "; 
+           std :: cin >> amountAgain;
+           amount = amountAgain;
+           std :: cin.clear(); 
+         std :: cin.ignore(3,'\n') ;
+           
+        } 
+        continue; 
+    }
+ // To know how much notes should be given out or print out 
+  int num50s = amount  / 50; 
+  amount %= 50;  
+
+  int num20s = amount / 20; 
+  amount  %= 20;
+
+  int num10s = amount / 10;
+
+  std :: cout << num50s << " notes of 50 Cedis" << std :: endl; 
+  std :: cout << num20s << " notes of 20 Cedis" << std :: endl; 
+  std :: cout << num10s << " notes of 10 cedis" << std :: endl;
+
+}
+
+int main () { 
+  std :: cout << "How much do you want to withdraw: " << std ::  endl; 
+  int amount; 
+  std :: cin >> amount;
+    
+  calculateNotes(amount);
+    return 0; 
+}
+
+// Initial upload of smart ATM code    

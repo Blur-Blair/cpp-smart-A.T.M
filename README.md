@@ -31,7 +31,7 @@ To run this project on your machine, ensure you have C++ Compiler (like g++) ins
   ## What I Want Feedback On: 
   1.Logic Efficiency: Did I handle the remainder updates correctly, or is there a more cleaner way to write the funnel?
   
-  2. Error handling: Is my validation if statement robust enough to prevent the "Bank heist" lol?
+  2. Error handling: Is my validation if statement robust enough to prevent the "Bank heist"? lol
 
   3. Code Structure: is the seperation between main() and the calculatesNotes function clear and logical?
 
